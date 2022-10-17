@@ -1,0 +1,256 @@
+:root{
+    --primary: #640568;
+    --dark: #050505;
+    --light: white;
+    --shadow: #535050;
+    --secondary: #050968;
+    --alpha: #086805;
+    --beta: #686405;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.details-vid{
+    text-align: center;
+}
+.details-pic{
+    width: 30%;
+}
+.details-pic img{
+    width: 100%;
+    height: 100%;
+}
+iframe{
+    padding: 0;
+    margin: 0;
+    border: none;
+    width: 100%;
+    height: 500px;
+}
+.details{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 30px 30px;
+}
+.details-description{
+    width: 100%;
+    border-top: 1px solid var(--alpha);
+}
+.details-description p{
+    border-bottom: 1px solid  var(--alpha);
+    padding: 10px 10px;
+    color: var(--light);
+    font-size: 1.05rem;
+}
+.details-description p a{
+    text-decoration: none;
+    color: var(--light);
+}
+.details-description h4{
+    width: 15%;
+    text-align: center;
+    color: var(--dark);
+    background: var(--alpha);
+    font-size: 1.1rem;
+}
+.downloadbtn{
+    text-align: center;
+    margin-bottom: 100px;
+}
+.d-btn{
+    padding: 5px 30px;
+    margin: 0 5px;
+    background: var(--primary);
+    color: var(--light);
+}
+.d-btn:hover{
+    background: var(--shadow);
+}
+.fa-solid{
+    font-size: 1.02rem;
+}
+.fa-solid:hover{
+    color: var(--dark);
+}
+.rating{
+    display: flex;
+    margin-left: 90%;
+}
+.rating .fa{
+    color: var(--secondary);
+}
+.like, .dislike{
+    cursor: pointer;
+    margin: 10px;
+}
+.comment-section{
+    margin: 0 200px 200px 200px;
+    padding: 30px 30px;
+    border: 1px solid var(--primary);
+    border-radius: 30px;
+}
+.comments h4{
+    color: var(--light);
+    padding: 7px 0;
+    background: var(--primary);
+    width: 27%;
+    text-align: center;
+}
+.comments input, .comments textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+.c-btn{
+    padding: 10px 20px;
+    cursor: pointer;
+    background: var(--primary);
+    color: var(--light);
+}
+.people-comments{
+    margin: 50px;
+    padding: 10px 10px;
+    border-top: 1px solid var(--alpha);
+    border-bottom: 1px solid var(--alpha);
+    border-radius: 25px;
+    cursor: pointer;
+}
+.people-comments p{
+    color: var(--light);
+}
+.people-comments h3{
+    color: var(--beta);
+    margin-top: 6px;
+}
+.person{
+    border-bottom: 1px solid var(--shadow);
+    padding: 0 10px;
+}
+.person:last-child{
+    border: none;
+}
+.v-btn{
+    margin-left: 45%;
+    padding: 10px 20px;
+    background: var(--primary);
+    color: var(--light);
+    cursor: pointer;
+}
+/* ------media query------- */
+@media(max-width: 1000px){
+    .details-description{
+        width: 75%;
+    }
+    .details-pic{
+        width: 40%;
+    }
+    .comment-section{
+        margin: 0 100px 100px 100px;
+    }
+}
+@media(max-width: 825px){
+    .details-description{
+        width: 80%;
+    }
+    .details-description h4{
+        width: 25%;
+    }
+    .details-pic{
+        width: 50%;
+    }
+    .like, .dislike{
+        margin-left: 50%;
+    }
+    .comment-section{
+        margin: 0 70px 70px 70px;
+    }
+    .people-comments{
+        margin: 30px;
+    }
+    .v-btn{
+        margin-left: 40%;
+    }
+}
+@media(max-width: 700px){
+    .details{
+        display: block;
+    }
+    .details-pic img{
+        width: 80%;
+        height: 50%;
+        margin-left: 60%;
+        margin-bottom: 20px;
+    }
+    .details-description{
+        width: 100%;
+    }
+    .details-description p{
+        font-size: 1rem;
+    }
+    .details-description h4{
+        width: 30%;
+        font-size: 1.05rem;
+    }
+    .comments h4{
+        width: 38%;
+    }
+    .like, .dislike{
+        margin-left: 30%;
+    }
+    .comment-section{
+        margin: 0 50px 50px 50px;
+    }
+}
+@media(max-width: 573px){
+    .d-btn{
+        padding: 5px 25px;
+        margin: 0 2px;
+    }
+    .fa-solid{
+        font-size: 0.9rem;
+    }
+    .comments h4{
+        width: 45%;
+    }
+    .like, .dislike{
+        margin-left: 10%;
+    }
+    .people-comments{
+        margin: 30px 10px 10px 10px;
+    }
+    .v-btn{
+        margin-left: 35%;
+    }
+}
+@media(max-width: 476px){
+    iframe{
+        height: 300px;
+    }
+    .d-btn{
+        padding: 5px 15px;
+        margin: 0 1px;
+    }
+    .fa-solid{
+        font-size: 0.7rem;
+    }
+    .details-description p{
+        font-size: 0.8rem;
+    }
+    .details-description h4{
+        font-size: 0.9rem;
+    }
+    .comments h4{
+        width: 50%;
+    }
+    .comment-section{
+        margin: 0 20px 50px 20px;
+    }
+    .people-comments{
+        margin: 30px 5px 10px 5px;
+    }
+}

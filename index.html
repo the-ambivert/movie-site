@@ -1,0 +1,1202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fontawesome-free-6.1.1-web/fontawesome-free-6.1.1-web/css/all.css">
+  </head>
+  <body>
+    <header>
+      <a href="index.html"><h1>loOp~VIEW</h1></a>
+      <nav>
+        <div class="navbar">
+          <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+              <div class="dropdown">
+                <div class="movies">
+                  <i class="fa-solid fa-arrow-right"></i>
+                  <a href="#" onclick="myFunction()" class="dropbtn">Movies <i class="fa-solid fa-caret-right"></i> </a>
+                  <i class="fa-solid fa-arrow-left"></i>
+                </div>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="#">Bollywood</a>
+                  <a href="#">Hollywood</a>
+                  <a href="#">Korean</a>
+                  <a href="#">Nollywood</a>
+                  <a href="#">Spanish</a>
+                </div>
+              </div>
+              <div class="dropdown2">
+                <div class="series">
+                  <i class="fa-solid fa-arrow-right"></i>
+                  <a href="#" onclick="myFunction2()" class="dropbtn2">Series <i class="fa-solid fa-caret-right"></i> </a>
+                  <i class="fa-solid fa-arrow-left"></i>
+                </div>
+                <div id="myDropdown2" class="dropdown-content2">
+                  <a href="#">American</a>
+                  <a href="#">Korean</a>
+                  <a href="#">Spanish</a>
+                </div>
+              </div>
+              <div class="dropdown3">
+                <div class="anime">
+                  <i class="fa-solid fa-arrow-right"></i>
+                  <a href="#" onclick="myFunction3()" class="dropbtn3">Anime <i class="fa-solid fa-caret-right"></i> </a>
+                  <i class="fa-solid fa-arrow-left"></i> 
+                </div>
+                <div id="myDropdown3" class="dropdown-content3">
+                  <a href="#">Anime Movies</a>
+                  <a href="#">Anime</a>
+                </div>
+              </div>
+              <div class="dropdown4">
+                <div class="tv-shows">
+                  <i class="fa-solid fa-arrow-right"></i>
+                  <a href="#" onclick="myFunction4()" class="dropbtn4">TV-shows <i class="fa-solid fa-caret-right"></i> </a>
+                  <i class="fa-solid fa-arrow-left"></i>
+                </div>
+                <div id="myDropdown4" class="dropdown-content4">
+                  <a href="#">Documentaries</a>
+                  <a href="#">Reality-Tv shows</a>
+                  <a href="#">Talk Shows</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    </header>
+    <main>
+      <section class="first-part" style="background: var(--light);">
+        <form class="search" action="/action_page.php">
+          <input type="text" placeholder="search..." class="searchbar">
+          <button class="btn" type="submit"><a href="#"><i class="fa fa-search"></i></a></button>
+        </form>
+      </section>
+      <section class="second-part" style="background: var(--light);">
+        <form name="all-categories" id="all-categories" action="/action_page.php" class="form2">
+          <div class="search-content">
+            <label>Categories: 
+              <select name="categories" id="categories">
+                <option value="" selected="selected" class="choose">choose a category</option>
+              </select>
+            </label>
+            <label>Genre: 
+              <select name="genre" id="genre">
+                <option value="" selected="selected" class="choose">Select genre</option>
+              </select>
+            </label>
+            <label>Movie Type: 
+              <select name="movieType" id="movieType">
+                <option value="" selected="selected" class="choose">choose movie type</option>
+              </select>
+            </label>
+            <label>Year: 
+              <select name="year" id="year">
+                <option value="select a year" class="opt">select a year</option>
+                <option value="2022" class="opt">2022</option>
+                <option value="2021" class="opt">2021</option>
+                <option value="2020" class="opt">2020</option>
+                <option value="2019" class="opt">2019</option>
+                <option value="2018" class="opt">2018</option>
+                <option value="2017" class="opt">2017</option>
+                <option value="2016" class="opt">2016</option>
+                <option value="2015" class="opt">2015</option>
+                <option value="2014" class="opt">2014</option>
+                <option value="2013" class="opt">2013</option>
+                <option value="2012" class="opt">2012</option>
+                <option value="2011" class="opt">2011</option>
+                <option value="2010" class="opt">2010</option>
+                <option value="2009" class="opt">2009</option>
+                <option value="2008" class="opt">2008</option>
+                <option value="2007" class="opt">2007</option>
+                <option value="2006" class="opt">2006</option>
+                <option value="2005" class="opt">2005</option>
+                <option value="2004" class="opt">2004</option>
+                <option value="2003" class="opt">2003</option>
+                <option value="2002" class="opt">2002</option>
+                <option value="2001" class="opt">2001</option>
+                <option value="2000" class="opt">2000</option>
+              </select>
+            </label>
+          </div>
+          <button type="submit" class="submit"><a href="#">Submit</a></button>
+        </form>
+      </section>
+      <!-- ----------------------------------------------------------------------------------------------------------------------- -->
+      <!-----------------------------------------------recently added------------------------------------------------------ -->
+      <section class="top-container">
+        <div class="container">
+          <div class="recent">
+            <h1>Recently-added</h1>
+            <div class="recent-boxes">
+              <div class="polaroid">
+                <a href="data.html" class="info"><img class="img1" src="images/Anime-movie/Gem7QlRYKYx.jpg"></a>
+                <div class="img-name">
+                  <p>Violet Evergarden: The Movie</p>
+                </div>
+              </div>
+              <div class="polaroid">
+                <a href="data10.html" class="info"><img class="img1" src="images/documentary/Aq2NAARJNzJ.jpg"></a>
+                <div class="img-name">
+                  <p>The Rescue</p>
+                </div>
+              </div>
+              <div class="polaroid">
+                <a href="data11.html" class="info"><img class="img1" src="images/K-drama/9bVNrqYqaWv.jpg"></a>
+                <div class="img-name">
+                  <p>The Empire of Law</p>
+                </div>
+              </div>
+              <div class="polaroid">
+                <a href="data2.html" class="info"><img class="img1" src="images/Anime-movie/Wz27WjV3K5R.jpg"></a>
+                <div class="img-name">
+                  <p>Gintama:The Very Final</p>
+                </div>
+              </div>
+              <div class="polaroid">
+                <a href="data3.html" class="info"><img class="img1" src="images/K-movies/l4MHHK.jpg"></a>
+                <div class="img-name">
+                  <p>Exit</p>
+                </div>
+              </div>
+              <div class="polaroid">
+                <a href="data4.html" class="info"><img class="img1" src="images/movies/G4E7zzpd7b6.jpg"></a>
+                <div class="img-name">
+                  <p>Hocus Pocus 2</p>
+                </div>
+              </div>
+              <div class="polaroid">
+                <a href="data12.html" class="info"><img class="img1" src="images/series/deYak22k7P3.jpg"></a>
+                <div class="img-name">
+                  <p>All American Homecoming</p>
+                </div>
+              </div>
+              <div class="polaroid">
+                <a href="data5.html" class="info"><img class="img1" src="images/K-movies/zxG7ZLo2Nq2.jpg"></a>
+                <div class="img-name">
+                  <p>Kingmaker</p>
+                </div>
+              </div>
+              <div class="polaroid">
+                <a href="data13.html" class="info"><img class="img1" src="images/reality show/mjyK6GP37wD.jpg"></a>
+                <div class="img-name">
+                  <p>Single's Inferno</p>
+                </div>
+              </div>
+              <div class="polaroid">
+                <a href="data6.html" class="info"><img class="img1" src="images/Spanish-movies/cRHKHK.jpg"></a>
+                <div class="img-name">
+                  <p>The Spanish Princess</p>
+                </div>
+              </div>
+              <div class="polaroid">
+                <a href="data14.html" class="info"><img class="img1" src="images/talk-show/3g8NB4Gp7DR.jpg"></a>
+                <div class="img-name">
+                  <p>Sex, Love & Goop</p>
+                </div>
+              </div>
+              <div class="polaroid">
+                <a href="data7.html" class="info"><img class="img1" src="images/Spanish-movies/W4lNmzJwKRo.jpg"></a>
+                <div class="img-name">
+                  <p>Rainbow</p>
+                </div>
+              </div>
+              <div class="polaroid">
+                <a href="data15.html" class="info"><img class="img1" src="images/series/xx1HHK.jpg"></a>
+                <div class="img-name">
+                  <p>Ballers</p>
+                </div>
+              </div>
+              <div class="polaroid">
+                <a href="data16.html" class="info"><img class="img1" src="images/Spanish-series/XV5KvxqQa9m.jpg"></a>
+                <div class="img-name">
+                  <p>Santo</p>
+                </div>
+              </div>
+              <div class="polaroid">
+                <a href="data17.html" class="info"><img class="img1" src="images/talk-show/kMLKHK.jpg"></a>
+                <div class="img-name">
+                  <p>Meghan & Harry </p>
+                </div>
+              </div>
+              <div class="polaroid">
+                <a href="data18.html" class="info"><img class="img1" src="images/reality show/qvg70Qvoaze.jpg"></a>
+                <div class="img-name">
+                  <p>Love Island</p>
+                </div>
+              </div>
+              <div class="polaroid">
+                <a href="data8.html" class="info"><img class="img1" src="images/Nigeria/XV5Kvzv2K9m.jpg"></a>
+                <div class="img-name">
+                  <p>Anikulapo</p>
+                </div>
+              </div>
+              <div class="polaroid">
+                <a href="data9.html" class="info"><img class="img1" src="images/movies/pJdN9klL74P.jpg"></a>
+                <div class="img-name">
+                  <p>Vesper</p>
+                </div>
+              </div>
+              <div class="polaroid">
+                <a href="data14.html" class="info"><img class="img1" src="images/Nigeria/WAPK4kolN0B.jpg"></a>
+                <div class="img-name">
+                  <p>King of Boys:The Return of The King</p>
+                </div>
+              </div>
+              <div class="polaroid">
+                <a href="data20.html" class="info"><img class="img1" src="images/K-drama/x5PKDd2RKnM.jpg"></a>
+                <div class="img-name">
+                  <p>Little Women</p>
+                </div>
+              </div>
+            </div>
+            <div class="pagination">
+              <a href="#">&raquo;</a>
+              <a href="#">6</a>
+              <a href="#">5</a>
+              <a href="#">4</a>
+              <a href="#">3</a>
+              <a href="#">2</a>
+              <a href="#">1</a>
+              <a href="#">&laquo;</a>
+            </div>
+          </div>
+          <!-- ------------------------------------------------------------------------------------------------------------->
+          <!-----------------------------------------------trending------------------------------------------------------ -->
+          <div class="trend">
+            <h1>Trending</h1>
+            <div class="trend-boxes">
+              <div class="polaroid">
+                <a href="data.html" class="info"><img class="img1" src="images/Anime-movie/Gem7QlRYKYx.jpg"></a>
+                <div class="img-name">
+                  <p>Violet Evergarden: The Movie</p>
+                </div>
+              </div>
+              <div class="polaroid">
+                <a href="data10.html" class="info"><img class="img1" src="images/documentary/Aq2NAARJNzJ.jpg"></a>
+                <div class="img-name">
+                  <p>The Rescue</p>
+                </div>
+              </div>
+              <div class="polaroid">
+                <a href="data11.html" class="info"><img class="img1" src="images/K-drama/9bVNrqYqaWv.jpg"></a>
+                <div class="img-name">
+                  <p>The Empire of Law</p>
+                </div>
+              </div>
+              <div class="polaroid">
+                <a href="data2.html" class="info"><img class="img1" src="images/Anime-movie/Wz27WjV3K5R.jpg"></a>
+                <div class="img-name">
+                  <p>Gintama:The Very Final</p>
+                </div>
+              </div>
+              <div class="polaroid">
+                <a href="data3.html" class="info"><img class="img1" src="images/K-movies/l4MHHK.jpg"></a>
+                <div class="img-name">
+                  <p>Exit</p>
+                </div>
+              </div>
+              <div class="polaroid">
+                <a href="data4.html" class="info"><img class="img1" src="images/movies/G4E7zzpd7b6.jpg"></a>
+                <div class="img-name">
+                  <p>Hocus Pocus 2</p>
+                </div>
+              </div>
+              <div class="polaroid">
+                <a href="data12.html" class="info"><img class="img1" src="images/series/deYak22k7P3.jpg"></a>
+                <div class="img-name">
+                  <p>All American Homecoming</p>
+                </div>
+              </div>
+              <div class="polaroid">
+                <a href="data5.html" class="info"><img class="img1" src="images/K-movies/zxG7ZLo2Nq2.jpg"></a>
+                <div class="img-name">
+                  <p>Kingmaker</p>
+                </div>
+              </div>
+              <div class="polaroid">
+                <a href="data13.html" class="info"><img class="img1" src="images/reality show/mjyK6GP37wD.jpg"></a>
+                <div class="img-name">
+                  <p>Single's Inferno</p>
+                </div>
+              </div>
+              <div class="polaroid">
+                <a href="data6.html" class="info"><img class="img1" src="images/Spanish-movies/cRHKHK.jpg"></a>
+                <div class="img-name">
+                  <p>The Spanish Princess</p>
+                </div>
+              </div>
+              <div class="polaroid">
+                <a href="data14.html" class="info"><img class="img1" src="images/talk-show/3g8NB4Gp7DR.jpg"></a>
+                <div class="img-name">
+                  <p>Sex, Love & Goop</p>
+                </div>
+              </div>
+              <div class="polaroid">
+                <a href="data7.html" class="info"><img class="img1" src="images/Spanish-movies/W4lNmzJwKRo.jpg"></a>
+                <div class="img-name">
+                  <p>Rainbow</p>
+                </div>
+              </div>
+              <div class="polaroid">
+                <a href="data15.html" class="info"><img class="img1" src="images/series/xx1HHK.jpg"></a>
+                <div class="img-name">
+                  <p>Ballers</p>
+                </div>
+              </div>
+              <div class="polaroid">
+                <a href="data16.html" class="info"><img class="img1" src="images/Spanish-series/XV5KvxqQa9m.jpg"></a>
+                <div class="img-name">
+                  <p>Santo</p>
+                </div>
+              </div>
+              <div class="polaroid">
+                <a href="data17.html" class="info"><img class="img1" src="images/talk-show/kMLKHK.jpg"></a>
+                <div class="img-name">
+                  <p>Meghan & Harry </p>
+                </div>
+              </div>
+              <div class="polaroid">
+                <a href="data18.html" class="info"><img class="img1" src="images/reality show/qvg70Qvoaze.jpg"></a>
+                <div class="img-name">
+                  <p>Love Island</p>
+                </div>
+              </div>
+              <div class="polaroid">
+                <a href="data8.html" class="info"><img class="img1" src="images/Nigeria/XV5Kvzv2K9m.jpg"></a>
+                <div class="img-name">
+                  <p>Anikulapo</p>
+                </div>
+              </div>
+              <div class="polaroid">
+                <a href="data9.html" class="info"><img class="img1" src="images/movies/pJdN9klL74P.jpg"></a>
+                <div class="img-name">
+                  <p>Vesper</p>
+                </div>
+              </div>
+              <div class="polaroid">
+                <a href="data19.html" class="info"><img class="img1" src="images/Nigeria/WAPK4kolN0B.jpg"></a>
+                <div class="img-name">
+                  <p>King of Boys:The Return of The King</p>
+                </div>
+              </div>
+              <div class="polaroid">
+                <a href="data20.html" class="info"><img class="img1" src="images/K-drama/x5PKDd2RKnM.jpg"></a>
+                <div class="img-name">
+                  <p>Little Women</p>
+                </div>
+              </div>
+            </div>
+            <div class="pagination">
+              <a href="#">&raquo;</a>
+              <a href="#">6</a>
+              <a href="#">5</a>
+              <a href="#">4</a>
+              <a href="#">3</a>
+              <a href="#">2</a>
+              <a href="#">1</a>
+              <a href="#">&laquo;</a>
+            </div>
+          </div>
+          <!-- ------------------------------------------------------------------------------------------------------------->
+          <!-----------------------------------------------upcoming------------------------------------------------------ -->
+          <div class="coming">
+            <h1>Upcoming</h1>
+            <div class="coming-boxes">
+              <div class="polaroid">
+                <a href="data.html" class="info"><img class="img1" src="images/Anime-movie/Gem7QlRYKYx.jpg"></a>
+                <div class="img-name">
+                  <p>Violet Evergarden: The Movie</p>
+                </div>
+              </div>
+              <div class="polaroid">
+                <a href="data10.html" class="info"><img class="img1" src="images/documentary/Aq2NAARJNzJ.jpg"></a>
+                <div class="img-name">
+                  <p>The Rescue</p>
+                </div>
+              </div>
+              <div class="polaroid">
+                <a href="data11.html" class="info"><img class="img1" src="images/K-drama/9bVNrqYqaWv.jpg"></a>
+                <div class="img-name">
+                  <p>The Empire of Law</p>
+                </div>
+              </div>
+              <div class="polaroid">
+                <a href="data2.html" class="info"><img class="img1" src="images/Anime-movie/Wz27WjV3K5R.jpg"></a>
+                <div class="img-name">
+                  <p>Gintama:The Very Final</p>
+                </div>
+              </div>
+              <div class="polaroid">
+                <a href="data3.html" class="info"><img class="img1" src="images/K-movies/l4MHHK.jpg"></a>
+                <div class="img-name">
+                  <p>Exit</p>
+                </div>
+              </div>
+              <div class="polaroid">
+                <a href="data4.html" class="info"><img class="img1" src="images/movies/G4E7zzpd7b6.jpg"></a>
+                <div class="img-name">
+                  <p>Hocus Pocus 2</p>
+                </div>
+              </div>
+              <div class="polaroid">
+                <a href="data12.html" class="info"><img class="img1" src="images/series/deYak22k7P3.jpg"></a>
+                <div class="img-name">
+                  <p>All American Homecoming</p>
+                </div>
+              </div>
+              <div class="polaroid">
+                <a href="data5.html" class="info"><img class="img1" src="images/K-movies/zxG7ZLo2Nq2.jpg"></a>
+                <div class="img-name">
+                  <p>Kingmaker</p>
+                </div>
+              </div>
+              <div class="polaroid">
+                <a href="data13.html" class="info"><img class="img1" src="images/reality show/mjyK6GP37wD.jpg"></a>
+                <div class="img-name">
+                  <p>Single's Inferno</p>
+                </div>
+              </div>
+              <div class="polaroid">
+                <a href="data6.html" class="info"><img class="img1" src="images/Spanish-movies/cRHKHK.jpg"></a>
+                <div class="img-name">
+                  <p>The Spanish Princess</p>
+                </div>
+              </div>
+              <div class="polaroid">
+                <a href="data14.html" class="info"><img class="img1" src="images/talk-show/3g8NB4Gp7DR.jpg"></a>
+                <div class="img-name">
+                  <p>Sex, Love & Goop</p>
+                </div>
+              </div>
+              <div class="polaroid">
+                <a href="data7.html" class="info"><img class="img1" src="images/Spanish-movies/W4lNmzJwKRo.jpg"></a>
+                <div class="img-name">
+                  <p>Rainbow</p>
+                </div>
+              </div>
+              <div class="polaroid">
+                <a href="data15.html" class="info"><img class="img1" src="images/series/xx1HHK.jpg"></a>
+                <div class="img-name">
+                  <p>Ballers</p>
+                </div>
+              </div>
+              <div class="polaroid">
+                <a href="data16.html" class="info"><img class="img1" src="images/Spanish-series/XV5KvxqQa9m.jpg"></a>
+                <div class="img-name">
+                  <p>Santo</p>
+                </div>
+              </div>
+              <div class="polaroid">
+                <a href="data17.html" class="info"><img class="img1" src="images/talk-show/kMLKHK.jpg"></a>
+                <div class="img-name">
+                  <p>Meghan & Harry </p>
+                </div>
+              </div>
+              <div class="polaroid">
+                <a href="data18.html" class="info"><img class="img1" src="images/reality show/qvg70Qvoaze.jpg"></a>
+                <div class="img-name">
+                  <p>Love Island</p>
+                </div>
+              </div>
+              <div class="polaroid">
+                <a href="data8.html" class="info"><img class="img1" src="images/Nigeria/XV5Kvzv2K9m.jpg"></a>
+                <div class="img-name">
+                  <p>Anikulapo</p>
+                </div>
+              </div>
+              <div class="polaroid">
+                <a href="data9.html" class="info"><img class="img1" src="images/movies/pJdN9klL74P.jpg"></a>
+                <div class="img-name">
+                  <p>Vesper</p>
+                </div>
+              </div>
+              <div class="polaroid">
+                <a href="data19.html" class="info"><img class="img1" src="images/Nigeria/WAPK4kolN0B.jpg"></a>
+                <div class="img-name">
+                  <p>King of Boys:The Return of The King</p>
+                </div>
+              </div>
+              <div class="polaroid">
+                <a href="data20.html" class="info"><img class="img1" src="images/K-drama/x5PKDd2RKnM.jpg"></a>
+                <div class="img-name">
+                  <p>Little Women</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pagination">
+            <a href="#">&raquo;</a>
+            <a href="#">6</a>
+            <a href="#">5</a>
+            <a href="#">4</a>
+            <a href="#">3</a>
+            <a href="#">2</a>
+            <a href="#">1</a>
+            <a href="#">&laquo;</a>
+          </div>
+        </div>
+        <!-- ----------------------------------------------------------------------------------------------------------------------- -->
+        <!--------------------------------------------------------latest------------------------------------------------------------- -->
+        <div class="container2">
+          <div class="showcase">
+            <h1 class="latest">Latest</h1>
+            <div class="latest-music">
+              <h2 class="music-main">music</h2>
+              <div class="music-pic">
+                <p><a href="#" class="pick">Ed Sheeran- Celestial</a></p>
+              </div>
+              <ul class="ul-music">
+                <li><a href="#">Tory Lanez- 'K Lo K' (ft. Fivio foreign)</a></li>
+                <li><a href="#">Alan Walker & Trevor Daniel- Extremes</a></li>
+                <li><a href="#">Shawn Mendes- Heartbeat</a></li>
+                <li><a href="#">S High- Hypnotize (ft. Zinoleesky)</a></li>
+                <li><a href="#">Ayra Starr & Kelly Rowland- Bloody Samaritan </a></li>       
+                <li><a href="#">Poco Lee- Otilo (IZZ Gone) feat. Hotkid</a></li>
+                <li><a href="#">King Perry- Turkey nla</a></li>
+                <li><a href="#">Pitbull- Mamasota</a></li>
+                <li><a href="#">Sam Smith & Kim Petras- Unholy</a></li>
+              </ul>
+            </div>
+            <div class="latest-news">
+              <h2 class="news-main">news</h2>
+              <div class="news-pic">
+                <p> <a href="#" class="pick">Lorem ipsum dolor, sit amet</a></p>
+              </div>
+              <ul class="ul-news">
+                <li><a href="#" >Lorem ipsum dolor sit quos culpa maiores!</a></li>
+                <li><a href="#" >Lorem ipsum dolor sitveniam natus sint at vitae.</a></li>
+                <li><a href="#">Lorem ipsum dolor sit edit molestias sit itaque minus</a></li>
+                <li><a href="#" >Lorem ipsum dolor sit quos culpa maiores!</a></li>
+                <li><a href="#" >Lorem ipsum dolor sitveniam natus sint at vitae.</a></li>
+                <li><a href="#">Lorem ipsum dolor sit edit molestias sit itaque minus</a></li>
+                <li><a href="#" >Lorem ipsum dolor sit quos culpa maiores!</a></li>
+                <li><a href="#" >Lorem ipsum dolor sitveniam natus sint at vitae.</a></li>
+                <li><a href="#">Lorem ipsum dolor sit edit molestias sit itaque minus</a></li>
+              </ul>
+            </div>
+            <div class="latest-sports">
+              <h2 class="sports-main">sports</h2>
+              <div class="sports-pic">
+                <p> <a href="#" class="pick">Lorem ipsum dolor</a></p>
+              </div>
+              <ul class="ul-sports">
+                <li><a href="#" >Lorem ipsum dolor sit quos culpa maiores!</a></li>
+                <li><a href="#" >Lorem ipsum dolor sitveniam natus sint at vitae.</a></li>
+                <li><a href="#">Lorem ipsum dolor sit edit molestias sit itaque minus</a></li>
+                <li><a href="#" >Lorem ipsum dolor sit quos culpa maiores!</a></li>
+                <li><a href="#" >Lorem ipsum dolor sitveniam natus sint at vitae.</a></li>
+                <li><a href="#">Lorem ipsum dolor sit edit molestias sit itaque minus</a></li>
+                <li><a href="#" >Lorem ipsum dolor sit quos culpa maiores!</a></li>
+                <li><a href="#" >Lorem ipsum dolor sitveniam natus sint at vitae.</a></li>
+                <li><a href="#">Lorem ipsum dolor sit edit molestias sit itaque minus</a></li>                
+              </ul>
+            </div>
+            <div class="latest-videos">
+              <h2 class="videos-main">videos</h2>
+              <div class="videos-pic">
+                <p> <a href="#" class="pick">Lorem ipsum dolor, sit amet</a></p>
+              </div>
+              <ul class="ul-videos">
+                <li><a href="#" >Lorem ipsum dolor sit quos culpa maiores!</a></li>
+                <li><a href="#" >Lorem ipsum dolor sitveniam natus sint at vitae.</a></li>
+                <li><a href="#">Lorem ipsum dolor sit edit molestias sit itaque minus</a></li>
+                <li><a href="#" >Lorem ipsum dolor sit quos culpa maiores!</a></li>
+                <li><a href="#" >Lorem ipsum dolor sitveniam natus sint at vitae.</a></li>
+                <li><a href="#">Lorem ipsum dolor sit edit molestias sit itaque minus</a></li>
+                <li><a href="#" >Lorem ipsum dolor sit quos culpa maiores!</a></li>
+                <li><a href="#" >Lorem ipsum dolor sitveniam natus sint at vitae.</a></li>
+                <li><a href="#">Lorem ipsum dolor sit edit molestias sit itaque minus</a></li>                
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- ----------------------------------------------------------------------------------------------------------------------- -->
+        <!------------------------------------------------------entertainment----------------------------------------------------------- -->
+        <div class="container3">
+          <div class="showcase3">
+            <h1 class="showcase3-main">Entertainment</h1>
+            <div class="entertainment-news">
+              <h2 class="showcase3-news">news</h2>
+              <div class="showcase3-newspic">
+                <p> <a href="#" class="pick">Lorem ipsum dolor, sit amet</a></p>
+              </div>
+              <ul class="ul-showcase3-news">
+                <li><a href="#" >Lorem ipsum dolor sit quos culpa maiores!</a></li>
+                <li><a href="#" >Lorem ipsum dolor sitveniam natus sint at vitae.</a></li>
+                <li><a href="#">Lorem ipsum dolor sit edit molestias sit itaque minus</a></li>
+                <li><a href="#" >Lorem ipsum dolor sit quos culpa maiores!</a></li>
+                <li><a href="#" >Lorem ipsum dolor sitveniam natus sint at vitae.</a></li>
+                <li><a href="#">Lorem ipsum dolor sit edit molestias sit itaque minus</a></li>
+                <li><a href="#" >Lorem ipsum dolor sit quos culpa maiores!</a></li>
+                <li><a href="#" >Lorem ipsum dolor sitveniam natus sint at vitae.</a></li>
+                <li><a href="#">Lorem ipsum dolor sit edit molestias sit itaque minus</a></li>
+              </ul>
+            </div>
+            <div class="entertainment-anime">
+              <h2 class="showcase3-anime">anime</h2>
+              <div class="showcase3-animepic">
+                <p> <a href="#" class="pick">Lorem ipsum dolor, sit amet</a></p>
+              </div>
+              <ul class="ul-showcase3-anime">
+                <li><a href="#" >Lorem ipsum dolor sit quos culpa maiores!</a></li>
+                <li><a href="#" >Lorem ipsum dolor sitveniam natus sint at vitae.</a></li>
+                <li><a href="#">Lorem ipsum dolor sit edit molestias sit itaque minus</a></li>
+                <li><a href="#" >Lorem ipsum dolor sit quos culpa maiores!</a></li>
+                <li><a href="#" >Lorem ipsum dolor sitveniam natus sint at vitae.</a></li>
+                <li><a href="#">Lorem ipsum dolor sit edit molestias sit itaque minus</a></li>
+                <li><a href="#" >Lorem ipsum dolor sit quos culpa maiores!</a></li>
+                <li><a href="#" >Lorem ipsum dolor sitveniam natus sint at vitae.</a></li>
+                <li><a href="#">Lorem ipsum dolor sit edit molestias sit itaque minus</a></li>
+              </ul>
+            </div>
+            <div class="entertainment-series">
+              <h2 class="showcase3-series">series</h2>
+              <div class="showcase3-seriespic">
+                <p> <a href="#" class="pick">Lorem ipsum dolor, sit amet</a></p>
+              </div>
+              <ul class="ul-showcase3-series">
+                <li><a href="#" >Lorem ipsum dolor sit quos culpa maiores!</a></li>
+                <li><a href="#" >Lorem ipsum dolor sitveniam natus sint at vitae.</a></li>
+                <li><a href="#">Lorem ipsum dolor sit edit molestias sit itaque minus</a></li>
+                <li><a href="#" >Lorem ipsum dolor sit quos culpa maiores!</a></li>
+                <li><a href="#" >Lorem ipsum dolor sitveniam natus sint at vitae.</a></li>
+                <li><a href="#">Lorem ipsum dolor sit edit molestias sit itaque minus</a></li>
+                <li><a href="#" >Lorem ipsum dolor sit quos culpa maiores!</a></li>
+                <li><a href="#" >Lorem ipsum dolor sitveniam natus sint at vitae.</a></li>
+                <li><a href="#">Lorem ipsum dolor sit edit molestias sit itaque minus</a></li>
+              </ul>
+            </div>
+            <div class="entertainment-movies">
+              <h2 class="showcase3-movies">movies</h2>
+              <div class="showcase3-moviespic">
+                <p> <a href="#" class="pick">Lorem ipsum dolor, sit amet</a></p>
+              </div>
+              <ul class="ul-showcase3-movies">
+                <li><a href="#" >Lorem ipsum dolor sit quos culpa maiores!</a></li>
+                <li><a href="#" >Lorem ipsum dolor sitveniam natus sint at vitae.</a></li>
+                <li><a href="#">Lorem ipsum dolor sit edit molestias sit itaque minus</a></li>
+                <li><a href="#" >Lorem ipsum dolor sit quos culpa maiores!</a></li>
+                <li><a href="#" >Lorem ipsum dolor sitveniam natus sint at vitae.</a></li>
+                <li><a href="#">Lorem ipsum dolor sit edit molestias sit itaque minus</a></li>
+                <li><a href="#" >Lorem ipsum dolor sit quos culpa maiores!</a></li>
+                <li><a href="#" >Lorem ipsum dolor sitveniam natus sint at vitae.</a></li>
+                <li><a href="#">Lorem ipsum dolor sit edit molestias sit itaque minus</a></li>
+              </ul>
+            </div>
+            <div class="entertainment-videos">
+              <h2 class="showcase3-videos">videos</h2>
+              <div class="showcase3-videospic">
+                <p> <a href="#" class="pick">Lorem ipsum dolor, sit amet</a></p>
+              </div>
+              <ul class="ul-showcase3-videos">
+                <li><a href="#" >Lorem ipsum dolor sit quos culpa maiores!</a></li>
+                <li><a href="#" >Lorem ipsum dolor sitveniam natus sint at vitae.</a></li>
+                <li><a href="#">Lorem ipsum dolor sit edit molestias sit itaque minus</a></li>
+                <li><a href="#" >Lorem ipsum dolor sit quos culpa maiores!</a></li>
+                <li><a href="#" >Lorem ipsum dolor sitveniam natus sint at vitae.</a></li>
+                <li><a href="#">Lorem ipsum dolor sit edit molestias sit itaque minus</a></li>
+                <li><a href="#" >Lorem ipsum dolor sit quos culpa maiores!</a></li>
+                <li><a href="#" >Lorem ipsum dolor sitveniam natus sint at vitae.</a></li>
+                <li><a href="#">Lorem ipsum dolor sit edit molestias sit itaque minus</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- ----------------------------------------------------------------------------------------------------------------------- -->
+    <!--------------------------------------------------------footer------------------------------------------------------------- -->
+    <footer>
+      <section style="display: flex; justify-content:space-evenly; ">          
+        <div class="social">
+            <a href="facebook.com" style="text-decoration: none; color: var(--dark);"><i class="fa-brands fa-facebook " style="padding-right: 10px;"></i></a>
+            <a href="telegram.com" style="text-decoration: none; color: var(--dark);"><i class="fa-brands fa-telegram" style="padding-right: 10px;"></i></a>
+            <a href="twitter.com" style="text-decoration: none; color: var(--dark);"><i class="fa-brands fa-twitter" style="padding-right: 10px;"></i></a>
+        </div>
+        <div class="contact-email" style="text-align: center;">
+          <p style="color: var(--dark); font-weight: bolder;">loop_view@gmail.com</p>
+        </div>
+      </section>
+      <section class="subscribe">
+        <form class="newsletter">
+          <p>Get the latest updates on movies and series by signing up to our Newsletter:</p>
+          <div class="contain-letter" style="display: flex; justify-content: center;"> 
+            <input type="email" placeholder="write your email" style="min-width: 70%; padding: 0.5rem 0.5rem; outline: none; ">
+            <button type="submit" style="color: var(--dark); background-color: var(--primary); border: none;">Subscribe</button>
+          </div>
+        </form>
+      </section >
+    </footer>
+    <!-- ----------------------------------------------------------------------------------------------------------------------- -->
+    <!-----------------------------------------------javascript for movies------------------------------------------------------ -->
+    <script>
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+      //<!-- ----------------------------------------------------------------------------------------------------------------------- -->
+      //<!-----------------------------------------------javascript for series------------------------------------------------------ -->
+      function myFunction2() {
+        document.getElementById("myDropdown2").classList.toggle("show");
+      }
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn2')){
+          var dropdowns = document.getElementsByClassName("dropdown-content2");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+      //<!-- ----------------------------------------------------------------------------------------------------------------------- -->
+      //<!-----------------------------------------------javascript for anime------------------------------------------------------ -->
+      function myFunction3() {
+      document.getElementById("myDropdown3").classList.toggle("show");
+      }
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn3')){
+          var dropdowns = document.getElementsByClassName("dropdown-content3");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+      //<!-- ----------------------------------------------------------------------------------------------------------------------- -->
+      //<!-----------------------------------------------javascript for tvshows------------------------------------------------------ -->
+      function myFunction4() {
+        document.getElementById("myDropdown4").classList.toggle("show");
+      }
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn4')){
+          var dropdowns = document.getElementsByClassName("dropdown-content4");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+      //<!-- ----------------------------------------------------------------------------------------------------------------------- -->
+      //<!--------------------------------------------javascript for nav small screen---------------------------------------------- -->
+      function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+      }
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+      }
+      //<!-- ----------------------------------------------------------------------------------------------------------------------- -->
+      //<!--------------------------------------------javascript for search breakdown--------------------------------------------- -->
+      var categoriesObject = {
+        "Movies": {
+          "Detectives": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Investigation": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Melodrama": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Youth": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Family": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Historical": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Action": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Drama": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Mystery": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Horror": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Supernatural": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Business": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Food": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Psychological": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "War": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Law": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Politics": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Revenge": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Music": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Martial arts": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Murder": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Time travel": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Childhood": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Sci-fi": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Tragedy": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Slice of life": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Betrayal": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Zombie": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Serial killer": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Military": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Accident": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Resurrection": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Gangster": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Entertainment": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "High school": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Bromance": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Manhunt": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Survival": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Sismance": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Fashion": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Love": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Animals": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Demon": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Vampire": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Romantic comedy": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Biography": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Josei": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Magic": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Bodyguard": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Crime": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Disaster": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Game": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "School": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Phobia": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Swordsman": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Nature": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Artificial intelligence": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Curse": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Fantasy": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Reality tv": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Harem": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Robot": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Underworld": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Exorcism": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Documentation": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Comedy": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Sports": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Manga": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Medicine": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Classic": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "RPG": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Samurai": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Erotic": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Police": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Suspense": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Thriller": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Werewolf": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Art": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Yuri": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Cooking": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Mythology": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Programmer": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Witch": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Animation": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Deity": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Terrorist": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Mafia": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+        },
+        "Series": {
+          "Detectives": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Investigation": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Melodrama": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Youth": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Family": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Historical": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Action": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Drama": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Mystery": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Horror": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Supernatural": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Business": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Food": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Psychological": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "War": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Law": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Politics": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Revenge": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Music": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Martial arts": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Murder": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Time travel": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Childhood": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Sci-fi": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Tragedy": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Slice of life": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Betrayal": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Zombie": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Serial killer": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Military": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Accident": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Resurrection": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Gangster": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Entertainment": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "High school": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Bromance": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Manhunt": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Survival": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Sismance": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Fashion": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Love": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Animals": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Demon": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Vampire": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Romantic comedy": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Biography": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Josei": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Magic": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Bodyguard": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Crime": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Disaster": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Game": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "School": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Phobia": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Swordsman": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Nature": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Artificial intelligence": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Curse": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Fantasy": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Reality tv": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Harem": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Robot": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Underworld": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Exorcism": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Documentation": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Comedy": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Sports": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Manga": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Medicine": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Classic": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "RPG": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Samurai": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Erotic": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Police": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Suspense": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Thriller": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Werewolf": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Art": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Yuri": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Cooking": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Mythology": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Programmer": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Witch": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Animation": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Deity": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Terrorist": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Mafia": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+        },
+        "Anime": {
+            "Detectives": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Investigation": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Melodrama": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Youth": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Family": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Historical": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Action": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Drama": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Mystery": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Horror": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Supernatural": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Business": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Food": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Psychological": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "War": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Law": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Politics": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Revenge": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Music": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Martial arts": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Murder": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Time travel": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Childhood": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Sci-fi": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Tragedy": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Slice of life": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Betrayal": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Zombie": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Serial killer": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Military": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Accident": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Resurrection": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Gangster": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Entertainment": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "High school": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Bromance": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Manhunt": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Survival": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Sismance": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Fashion": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Love": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Animals": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Demon": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Vampire": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Romantic comedy": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Biography": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Josei": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Magic": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Bodyguard": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Crime": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Disaster": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Game": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "School": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Phobia": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Swordsman": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Nature": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Artificial intelligence": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Curse": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Fantasy": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Reality tv": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Harem": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Robot": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Underworld": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Exorcism": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Documentation": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Comedy": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Sports": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Manga": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Medicine": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Classic": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "RPG": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Samurai": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Erotic": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Police": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Suspense": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Thriller": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Werewolf": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Art": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Yuri": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Cooking": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Mythology": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Programmer": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Witch": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Animation": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Deity": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Terrorist": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Mafia": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+        },
+        "tv-shows": {
+            "Detectives": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Investigation": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Melodrama": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Youth": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Family": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Historical": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Action": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Drama": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Mystery": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Horror": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Supernatural": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Business": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Food": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Psychological": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "War": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Law": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Politics": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Revenge": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Music": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Martial arts": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Murder": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Time travel": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Childhood": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Sci-fi": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Tragedy": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Slice of life": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Betrayal": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Zombie": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Serial killer": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Military": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Accident": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Resurrection": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Gangster": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Entertainment": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "High school": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Bromance": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Manhunt": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Survival": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Sismance": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Fashion": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Love": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Animals": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Demon": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Vampire": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Romantic comedy": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Biography": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Josei": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Magic": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Bodyguard": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Crime": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Disaster": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Game": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "School": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Phobia": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Swordsman": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Nature": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Artificial intelligence": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Curse": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Fantasy": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Reality tv": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Harem": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Robot": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Underworld": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Exorcism": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Documentation": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Comedy": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Sports": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Manga": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Medicine": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Classic": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "RPG": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Samurai": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Erotic": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Police": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Suspense": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Thriller": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Werewolf": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Art": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Yuri": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Cooking": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Mythology": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Programmer": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Witch": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Animation": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Deity": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Terrorist": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+          "Mafia": ["American", "Bollywood", "Hollywood", "Korean", "Nollywood", "Spanish", "Japanese"],
+        }
+      }
+      window.onload = function() {
+      var categoriesSel = document.getElementById("categories");
+      var genreSel = document.getElementById("genre");
+      var movieTypeSel = document.getElementById("movieType");
+      for (var x in categoriesObject) {
+        categoriesSel.options[categoriesSel.options.length] = new Option(x, x);
+      }
+        categoriesSel.onchange = function() {
+          //empty movieType- and genre- dropdowns
+          movieTypeSel.length = 1;
+          genreSel.length = 1;
+          //display correct values
+          for (var y in categoriesObject[this.value]) {
+            genreSel.options[genreSel.options.length] = new Option(y, y);
+          }
+        }
+        genreSel.onchange = function() {
+          //empty movieType dropdown
+          movieTypeSel.length = 1;
+          //display correct values
+          var z = categoriesObject[categoriesSel.value][this.value];
+          for (var i = 0; i < z.length; i++) {
+            movieTypeSel.options[movieTypeSel.options.length] = new Option(z[i], z[i]);
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
