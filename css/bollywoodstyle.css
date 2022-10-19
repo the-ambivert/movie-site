@@ -1,0 +1,12 @@
+.bollywood-branch{
+    margin: auto;
+    padding: 30px 40px;
+    background: var(--dark);
+}
+.bollywood-branch-col{
+    margin-bottom: 150px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin-bottom: 20px;
+}

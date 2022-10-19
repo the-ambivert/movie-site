@@ -292,17 +292,17 @@ select{
     font-size: 14px;
     color: var(--light);
 }
-.top-container{
-    margin: auto;
-    padding: 30px 40px;
-    background: var(--dark);
-}
 ul{
     list-style: none;
 }
 ul a{
     text-decoration: none;
     color: var(--light);
+}
+.top-container{
+    margin: auto;
+    padding: 30px 40px;
+    background: var(--dark);
 }
 .container{
     margin-bottom: 150px;
