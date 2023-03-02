@@ -1,9 +1,9 @@
-.bollywood-branch{
+.bollywood-branch, .hollywood-branch{
     margin: auto;
     padding: 30px 40px;
     background: var(--dark);
 }
-.bollywood-branch-col{
+.bollywood-branch-col, .hollywood-branch-col{
     margin-bottom: 150px;
     display: grid;
     grid-gap: 20px;
